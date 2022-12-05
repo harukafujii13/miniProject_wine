@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(53, 50, 50);
+}
+
+body {
+    background-color: rgb(224, 219, 212);
+}
+
+.header-container {
+ position: absolute;
+ font-family: 'Roboto', sans-serif;
+ font-size: 1rem;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
+}
+
+.top-wrapper {
+    /* 常に全画像を表示したいとき */
+    /* width: 100%;
+    height: 0;
+    padding-top: 66.24%;
+    background-image:url("/image/pexels-math-21393.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; */
+
+    background-image:url("/image/pexels-math-21393.jpg");
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 60%;
+    position: relative;
+}
+
+@keyframes loop {
+    from{
+        transform: translate(0);
+    }
+    to {
+        transform: translate(-100%);
+    }
+}
+
+.scroll {
+    margin: 15px;
+    padding: 30px;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    height: 180px;
+    overflow-y: hidden;
+    /* max-width: 500px; */
+}
+
+.scroll-list {
+    display: flex;
+    align-items: center;
+    animation: loop infinite linear 17s both;
+    list-style: none;
+}
+
+.scroll-list img {
+    width: 80%;
+    height: 80%;
+}
+
+.scroll-list li {
+    min-width: 150px;
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+}
+
+.intro {
+    text-align: center;
+    /* border: 1px solid black; */
+    margin: 40px 30px;
+}
+
+.intro h1 {
+    font-size: 70px;
+    padding-bottom: 20px;
+    font-family: 'Caveat', cursive;
+}
+
+.intro p {
+ font-size: 30px;
+}
+
+.history {
+    text-align: center;
+    border-radius: 30px;
+    background-color: rgb(206, 203, 197);
+    padding: 30px;
+    margin: 60px 50px;
+}
+
+.history h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.history p {
+    font-size: 25px;
+}
+
+.features {
+    text-align: center;
+    padding: 30px;
+    margin: 60px 50px;
+
+}
+
+.features h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+
+}
+
+.features p {
+    font-size: 25px;
+}
+
+.wine-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.item {
+    padding: 15px;
+    width: 30%;
+    background-color: rgb(206, 203, 197);
+    border-radius: 20px;
+    text-align: center;
+    margin: 5px;
+}
+
+.item img {
+    height: auto;
+    width: 50%;
+    
+}
+
+.wine-info h3 {
+    font-size: 30px;
+    padding: 10px 0;
+
+}
+
+.wine-info p {
+    font-size: 20px;
+}
+
+
+
+@media not all and (min-width: 768px){
+    .item {
+        width: 100%;
+    }
+
+    .item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.footer-container {
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgb(103, 129, 103);
+    padding: 30px 0;
+    font-size: 20px;
+}
+
